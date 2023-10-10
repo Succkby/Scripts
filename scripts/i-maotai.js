@@ -113,7 +113,7 @@ if ($.isNode()) {
         let new_Device_ID = $request.headers['MT-Device-ID'] || $request.headers['mt-device-id'];
         let old_MT_Token = MT_TOKENS.split(',') ? MT_TOKENS.split(',')[1] : '';
         if (old_MT_Token !== new_MT_Token) {
-          $.setdata(new_Device_ID + ',' + new_MT_Token, MT_TOKENS);
+          $.setdata(new_Device_ID + ',' + new_MT_Token, 'MT_TOKENS');
           $.msg($.name, `🎉 Token获取成功`, `${new_Device_ID + ',' + new_MT_Token}`);
         } else {
           $.log(`无需更新 MT-Token:\n${new_Device_ID + ',' + new_MT_Token}\n`);
