@@ -221,8 +221,12 @@ if ($.isNode()) {
 async function getLatestVersion() {
   data = await http_get(`https://apps.apple.com/cn/app/i%E8%8C%85%E5%8F%B0/id1600482450`);
   if (data) {
-    MT_VERSION = data.match(/whats-new__latest__version">版本 (\d+\.\d+\.\d+)/)[1];
-    !$.isNode() ? $.setdata($.MT_VERSION, `MT_VERSION`) : '';  // 持久化
+    try {
+      MT_VERSION = data.match(/whats-new__latest__version">版本 (\d+\.\d+\.\d+)/)[1];
+      !$.isNode() ? $.setdata(MT_VERSION, `MT_VERSION`) : '';  // 持久化
+    } catch (e) {
+      $.log(e);
+    };
   } else {
     console.log(`最新版本获取失败\n`);
   }
