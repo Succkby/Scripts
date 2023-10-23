@@ -14,9 +14,9 @@
 
 --------------- BoxJS & 重写模块 --------------
 
-https://raw.githubusercontent.com/FoKit/Scripts/main/boxjs/fokit.boxjs.json
-https://raw.githubusercontent.com/FoKit/Scripts/main/rewrite/get_maotai_token.conf
-https://raw.githubusercontent.com/FoKit/Scripts/main/rewrite/get_maotai_token.sgmodule
+https://raw.githubusercontent.com/Mik0n7/Scripts/main/boxjs/fokit.boxjs.json
+https://raw.githubusercontent.com/Mik0n7/Scripts/main/rewrite/get_maotai_token.conf
+https://raw.githubusercontent.com/Mik0n7/Scripts/main/rewrite/get_maotai_token.sgmodule
 
 ------------------ Surge 配置 -----------------
 
